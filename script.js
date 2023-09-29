@@ -89,6 +89,11 @@ document.addEventListener('keydown',(keypressed)=>{
                 operandCount = 0;
             }
         }
+        if(keypressed.key==='Backspace'){
+            let str = screen.textContent;
+            str = str.slice(0, str.length - 1);
+            screen.textContent = str;
+        }
 
         
 })
@@ -106,6 +111,8 @@ function operate(string, op) {
         result =  operands[0] * operands[1];
     }
     if (op == '/') {
+        if(operands[1]==0)
+            return "Are you stupid?";
         result = operands[0] / operands[1];
     }
     if (op == '%') {

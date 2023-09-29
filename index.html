@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link href="styles.css" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/4c536a6bd5.js"
+    crossorigin="anonymous"
+  ></script>
+    <link href="styles.css" rel="stylesheet"/>
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <div id="calculator">
-        <div id="screen"></div>
-        <div id="keysContainer">
-            <div class="row">
-                <div id="del" class="key operators">Del</div>
-                <div id="clearAll" class="key operators">C</div>
-                <div id="mod" class="key operators">%</div>
-                <div id="divide" class="key operators">/</div>
-            </div>
-            <div class="row">
-                <div id="7" class="key numbers">7</div>
-                <div id="8" class="key numbers">8</div>
-                <div id="9" class="key numbers">9</div>
-                <div id="multiply" class="key operators">*</div>
-            </div>
-            <div class="row">
-                <div id="4" class="key numbers">4</div>
-                <div id="5" class="key numbers">5</div>
-                <div id="6" class="key numbers">6</div>
-                <div id="minus" class="key operators">-</div>
-            </div>
-            <div class="row">
-                <div id="1" class="key numbers">1</div>
-                <div id="2" class="key numbers">2</div>
-                <div id="3" class="key numbers">3</div>
-                <div id="plus" class="key operators">+</div>
-            </div>
-            <div class="row">
-                <div id="hidden" class="key"> </div>
-                <div id="0" class="key numbers">0</div>
-                <div id="." class="key numbers">.</div>
-                <div id="equals" class="key operators">=</div>
+    <main>
+        <div id="calculator">
+            <div id="screen"></div>
+            <div id="keysContainer">
+                <div class="row">
+                    <div id="del" class="key operators">Del</div>
+                    <div id="clearAll" class="key operators">C</div>
+                    <div id="mod" class="key operators">%</div>
+                    <div id="divide" class="key operators">/</div>
+                </div>
+                <div class="row">
+                    <div id="7" class="key numbers">7</div>
+                    <div id="8" class="key numbers">8</div>
+                    <div id="9" class="key numbers">9</div>
+                    <div id="multiply" class="key operators">*</div>
+                </div>
+                <div class="row">
+                    <div id="4" class="key numbers">4</div>
+                    <div id="5" class="key numbers">5</div>
+                    <div id="6" class="key numbers">6</div>
+                    <div id="minus" class="key operators">-</div>
+                </div>
+                <div class="row">
+                    <div id="1" class="key numbers">1</div>
+                    <div id="2" class="key numbers">2</div>
+                    <div id="3" class="key numbers">3</div>
+                    <div id="plus" class="key operators">+</div>
+                </div>
+                <div class="row">
+                    <div id="hidden" class="key"> </div>
+                    <div id="0" class="key numbers">0</div>
+                    <div id="." class="key numbers">.</div>
+                    <div id="equals" class="key operators">=</div>
+                </div>
             </div>
         </div>
+    </main>
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          kniroj-neupane
+        </p>
+        <a href="https://github.com/kniroj-neupane" target="_blank">
+          <i class="fab fa-github"></i></a>
+      </footer>
 </body>
+
 </html>
