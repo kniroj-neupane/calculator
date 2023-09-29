@@ -8,52 +8,39 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <h2>Calculator</h2>
     <div id="calculator">
         <div id="screen"></div>
-        <div id="digits">
-            <div id="numbers">
-                <div class="row">
-                    <div class="key" id="7">7</div>
-                    <div class="key" id="8">8</div>
-                    <div class="key" id="9">9</div>
-                </div>
-                <div class="row">
-                    <div class="key" id="4">4</div>
-                    <div class="key" id="5">5</div>
-                    <div class="key" id="6">6</div>
-                </div>
-                <div class="row">
-                    <div class="key" id="1">1</div>
-                    <div class="key" id="2">2</div>
-                    <div class="key" id="3">3</div>
-                </div>
-                <div class="row">
-                    <div class="key" id=".">.</div>
-                    <div class="key" id="0">0</div>
-                    <div class="key" id="hide"> </div>
-                </div>
+        <div id="keysContainer">
+            <div class="row">
+                <div id="del" class="key operators">Del</div>
+                <div id="clearAll" class="key operators">C</div>
+                <div id="mod" class="key operators">%</div>
+                <div id="divide" class="key operators">/</div>
             </div>
-            <div id="operators">
-                <div class="row">
-                    <div class="key" id="del">Del</div>
-                    <div class="key" id="clearAll">C</div>
-                </div>
-                <div class="row">
-                    <div class="key" id="plus">+</div>
-                    <div class="key" id="minus">-</div>
-                </div>
-                <div class="row">
-                    <div class="key" id="divide">/</div>
-                    <div class="key" id="multiply">*</div>
-                </div>
-                <div class="row">
-                    <div class="key" id="equals">=</div>
-                    <div class="key" id="hide"></div>
-                </div>
-
+            <div class="row">
+                <div id="7" class="key numbers">7</div>
+                <div id="8" class="key numbers">8</div>
+                <div id="9" class="key numbers">9</div>
+                <div id="multiply" class="key operators">*</div>
+            </div>
+            <div class="row">
+                <div id="4" class="key numbers">4</div>
+                <div id="5" class="key numbers">5</div>
+                <div id="6" class="key numbers">6</div>
+                <div id="minus" class="key operators">-</div>
+            </div>
+            <div class="row">
+                <div id="1" class="key numbers">1</div>
+                <div id="2" class="key numbers">2</div>
+                <div id="3" class="key numbers">3</div>
+                <div id="plus" class="key operators">+</div>
+            </div>
+            <div class="row">
+                <div id="hidden" class="key"> </div>
+                <div id="0" class="key numbers">0</div>
+                <div id="." class="key numbers">.</div>
+                <div id="equals" class="key operators">=</div>
             </div>
         </div>
-    </div>
 </body>
 </html>

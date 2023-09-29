@@ -1,47 +1,38 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(25, 41, 65);
+}
+
 #calculator{
-    width: 40vw;
-    height: 80vh;
+    width: 26vw;
+    height: 90vh;
     margin: auto;
-    background-color: black;
-    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.945);
+    border-radius: 15px;
     padding: 30px;
 }
 #screen{
-    width: 30rem;
+    width: 22vw;
     height: 20vh;
     margin: auto;
-    background-color: white;
-    border-radius: 5px;
+    background-color: rgb(77, 72, 72);
+    border-radius: 15px;
     color: black;
     font-weight: bold;
     font-size: 36px;
 }
-#digits{
-    height: 50vh;
-    width: 30rem;
+#keysContainer{
+    color: white;
+    font-weight: bold;
+    font-size: 26px;
+    width: 22vw;
+    height: 60vh;
     margin: auto;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-#numbers{
-    width: 50rem;
-    background-color: green;
-    margin: 5px;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-#operators{
-    width: 30rem;
-    background-color: blue;
-    margin: 5px;
-    border-radius: 5px;
+    margin-top: 15px;
+    /* border: 1px solid rgba(51, 49, 49, 0.356); */
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -50,22 +41,26 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0 10px;
 }
 .key{
     width: 70px;
-    height: 60px;
-    background-color: white;
-    border-radius: 5px;
-    color: black;
+    height: 70px;
+    border-radius: 50px;
+    box-shadow: 4px 4px black;
+    background-color: rgba(51, 49, 49, 0.356);
     text-align: center;
-    padding-top: 15px;
-    font-weight: bold;
-    font-size: 26px;
+    padding-top: 20px;
 }
-.key:hover{
-    cursor: grab;
+.operators{
+    color: green;
 }
-#hide{
-    background-color: inherit;
+#equals{
+    background-color: green;
+    color: black;
+}
+#del,#clearAll{
+    color: red;
+}
+#hidden{
+    background-color: rgba(0, 0, 0, 0.877);
 }
