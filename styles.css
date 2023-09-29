@@ -12,6 +12,8 @@ body{
     background-color: rgba(0, 0, 0, 0.945);
     border-radius: 15px;
     padding: 30px;
+    color: white;
+
 }
 #screen{
     width: 22vw;
@@ -19,12 +21,12 @@ body{
     margin: auto;
     background-color: rgb(77, 72, 72);
     border-radius: 15px;
-    color: black;
     font-weight: bold;
     font-size: 36px;
+    padding: 10px;
+    overflow: hidden;
 }
 #keysContainer{
-    color: white;
     font-weight: bold;
     font-size: 26px;
     width: 22vw;
@@ -50,6 +52,12 @@ body{
     background-color: rgba(51, 49, 49, 0.356);
     text-align: center;
     padding-top: 20px;
+}
+.key:hover{
+    cursor: grab;
+    background-color: rgba(51, 49, 49, 0.952);
+    margin-top:-2px;
+    
 }
 .operators{
     color: green;
